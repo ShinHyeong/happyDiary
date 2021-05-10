@@ -10,5 +10,5 @@ RUN apt-get update && \
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 80
+EXPOSE 8080
 CMD ["python3", "main.py"]
