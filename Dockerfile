@@ -1,13 +1,10 @@
 FROM civisanalytics/civis-jupyter-python3
 
+COPY ./OneDrive /root/work/OneDrive
+WORKDIR /root/work
 
-RUN mkdir -p /app
-
-WORKDIR /app
-COPY . .
-
-RUN apt-get update && \
-    apt-get install -y
+RUN apt-get -y -qq update && \
+     conda install -y pytorch-cpu torchvision-cpu -c pytorch
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
