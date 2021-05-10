@@ -13,5 +13,5 @@ Write down your happy moment in a complete sentence. (Write three such moments.)
     Base model: gpt-2
     Epoch: 5
 
-huggingface의 gpt-2 모델을 바탕으로, 키워드를 입력하면 가상의 행복한 일상을 만들어내는 모델입니다.
+huggingface의 gpt-2 모델을 바탕으로, 키워드를 입력하면 가상의 행복한 일상을 만들어내는 서비스입니다.
     
