@@ -1,4 +1,5 @@
-FROM pytorch/pytorch:1.2-cudoa10.0-cudnn7-devel
+FROM civisanalytics/civis-jupyter-python3
+
 
 RUN mkdir -p /app
 
@@ -10,5 +11,6 @@ RUN apt-get update && \
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
 
-EXPOSE 8080
-CMD ["python3", "main.py"]
+EXPOSE 8888 22
+CMD jupyter notebook --NotebookApp.token='' \
+	 --ip=0.0.0.0 --port=8888 --allow-root
