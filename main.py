@@ -14,7 +14,7 @@ import transformers
     --output_dir=first \
     --model_type=gpt2 \
     --model_name_or_path=gpt2 \
-    --num_train_epochs=1.0 \
+    --num_train_epochs=5.0 \
     --do_train \
     --logging_steps=1000 \
     --save_steps=1000 \
